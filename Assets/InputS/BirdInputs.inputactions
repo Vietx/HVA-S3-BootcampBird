@@ -1,0 +1,88 @@
+{
+    "name": "BirdInputs",
+    "maps": [
+        {
+            "name": "Bird",
+            "id": "3216f8b4-974b-4cbe-89c7-9daceb963ad2",
+            "actions": [
+                {
+                    "name": "Jump",
+                    "type": "Value",
+                    "id": "bc905f82-2ff8-48fe-9244-1d5725a8e89e",
+                    "expectedControlType": "Double",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Movement",
+                    "type": "PassThrough",
+                    "id": "3998d3a4-8d6d-4522-b626-70603fb456b9",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3f072c42-99b3-4d17-88d6-6d210a5625c8",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Bird",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "cbc6a394-eece-43a2-8781-0f174eaadcaf",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "c2668ea0-e9c5-43e9-9076-29ccf0009347",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Bird",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "f0f242d1-07bd-4308-8abe-894d194be800",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Bird",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Bird",
+            "bindingGroup": "Bird",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
